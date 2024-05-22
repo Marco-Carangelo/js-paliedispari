@@ -1,7 +1,7 @@
 'use strict'
 
 //Chiediamo all'utente di inserire una parola e la inseriamo in una variabile
-let userInput = prompt("Inserisci una parola per verificare se è palindroma");
+let userInput = prompt("Inserisci una parola o frase per verificare se è palindroma");
 
 //Validiamo l'input assicurandoci che non ci siano spazi prima e dopo la stringa inserita tramite il metodo trim
 userInput = userInput.trim();
@@ -28,6 +28,9 @@ function palindrome(userString) {
 
     //Trasformiamo la stringa in caratteri minuscoli per evitare risultati falsati
     userString = userString.toLowerCase();
+
+    //Cancelliamo eventuali spazi interni della stringa per poterla far funzionare anche con delle frasi
+    userString = userString.replace(/\s+/g, '');
 
     //Creiamo un ciclo For per confrontare i caratteri della stringa
 
