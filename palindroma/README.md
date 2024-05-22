@@ -11,3 +11,4 @@ Risoluzione:
 - Possiamo procedere impostando un ciclo For che confronti la prima lettera della stringa con l'ultima nel primo ciclo, la seconda lettera con la penultima nel secondo e prosegua fino alla metà della lunghezza della stringa.
 Se la stringa è di lunghezza dispari non è un problema, in quanto il carattere al centro resterebbe nella stessa posizione anche invertendola, quindi si può immaginare una stringa composta da 6 carateri come 3+3, una stringa composta da 7 caratteri come 3+1+3, in entrambi i casi vengono confrontanti sempre i gruppi da 3 caratteri. 
 Per impostare il valore massimo del contatore bisognerà ignorare l'eventuale resto della divisione di un numero dispari.
+- Possiamo creare una funzione che restituisca un valore booleano, in modo da gestire i due possibili risultati con una struttura If Else
